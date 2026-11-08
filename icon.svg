@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Git tree">
+  <rect x="0" y="0" width="24" height="24" rx="6" fill="#14161a"/>
+  <g fill="none" stroke="#4c8dff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 7.6v8.8"/>
+    <path d="M17 9.4v2.1c0 2-1.6 3.6-3.6 3.6H10"/>
+  </g>
+  <g fill="#4c8dff">
+    <circle cx="7" cy="5.6" r="1.9"/>
+    <circle cx="7" cy="18.4" r="1.9"/>
+    <circle cx="17" cy="7.4" r="1.9"/>
+  </g>
+  <circle cx="17" cy="7.4" r="3.4" fill="none" stroke="#8fc0ff" stroke-width="0.9" stroke-opacity="0.55"/>
+</svg>

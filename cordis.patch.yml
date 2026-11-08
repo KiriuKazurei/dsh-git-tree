@@ -1,0 +1,9 @@
+# dsh-git-tree plugin row.
+#
+# Host half: one authenticated exact Fetch route (`POST /api/git-tree`) that
+# reads the session workspace repository with the system `git` binary.
+# Client half: a fixed floating Git graph in `shell.overlay` plus a tab type
+# for the built-in right Sidebar.
+- insert:
+    - id: dsh-git-tree
+      name: 'dsh-git-tree'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Git Tree Overlay",
+    "description": "Floats a live Git graph over the conversation: branch, merge and rebase lanes, hover for commit time/hash/description, click to open full details in the right Sidebar."
+  }
+}

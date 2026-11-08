@@ -1,0 +1,9 @@
+{
+  "id": "dsh-git-tree",
+  "version": "0.1.5",
+  "main": "./lib/index.js",
+  "description": "Floating Git graph for the conversation with a right Sidebar detail tab.",
+  "engines": {
+    "dsh": "*"
+  }
+}

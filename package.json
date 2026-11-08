@@ -1,0 +1,50 @@
+{
+  "name": "dsh-git-tree",
+  "version": "0.1.5",
+  "private": true,
+  "type": "module",
+  "description": "Floating Git graph for the conversation: branch/merge/rebase lanes, hover commit details, and a full detail pane in the right Sidebar.",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": "*"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/host.test.mjs tests/graph.test.mjs tests/api.test.mjs tests/diff.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
